@@ -15,3 +15,16 @@ processing.run("native:buffer",
                {'INPUT':'/Users/netid/Downloads/eee_towns_intersect.shp',
                'DISTANCE':6336, 'SEGMENTS':5,'MITER_JOIN':True, 
                'END_CAP_STYLE':0, 'OUTPUT':'/Users/netid/Downloads/eee_buffer_temp.shp'})
+
+               
+# Intersect towns layer with the 1 mile buffer to create new shapefile
+processing.run("native:intersection", {'INPUT':'/Users/netid/Downloads/eee_cases_ma_albers_ea_conic.shp','OVERLAY':'/Users/netid/Downloads/census2020towns_ma_fix.shp','INPUT_FIELDS':[],'OVERLAY_FIELDS':[],'OVERLAY_FIELDS_PREFIX':'','OUTPUT':'/Users/netid/Downloads/eee_towns_intersect_temp4.shp','GRID_SIZE':None})
+
+
+
+
+
+
+
+
+
